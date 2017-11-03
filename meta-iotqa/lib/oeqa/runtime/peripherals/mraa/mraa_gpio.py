@@ -27,6 +27,8 @@ class MraaGpioTest(oeRuntimeTest):
             self.pin = "51"
         elif "minnowboard" in output:
             self.pin = "25"
+        elif "upsquared" in output:
+            self.pin = "18"
         else:
             raise unittest.SkipTest(output)
 
